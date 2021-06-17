@@ -20,7 +20,7 @@ public class Day2 {
 
         List<Product> productPriceLessThan500 = products
                 .stream()
-                .filter(p -> p.getPrice() > 100)
+                .filter(p -> p.getPrice() < 500)
                 .collect(Collectors.toList());
 
         System.out.println(productPriceLessThan500.toString());
